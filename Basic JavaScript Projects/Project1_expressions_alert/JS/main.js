@@ -8,6 +8,7 @@ document.write(' Writing a string here'
 +' strings together.');
 var B = ' Concatenated' + ' String.'
 document.write(B);
-var Family = ' The Simpsons', Dad = ' Homer', Mom = ' Marge',
-Son = ' Bart', Daughter = ' Lisa'; 
+var Family = ' The Simpsons', Dad = ' Homer ', Mom = ' Marge ',
+Son = ' Bart ', Daughter = ' Lisa '; 
 document.write(Daughter);
+document.write(5+5);
