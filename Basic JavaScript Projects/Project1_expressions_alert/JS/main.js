@@ -1,3 +1,4 @@
+window.alert('Hello, World!');
 var A = 'This is a string.';
 window.alert(A);
 document.write(A);
