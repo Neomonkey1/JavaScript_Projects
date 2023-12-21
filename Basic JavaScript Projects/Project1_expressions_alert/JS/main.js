@@ -1,2 +1,4 @@
-window.alert('Hello, World!')
-document.write('Hello, World!')
+var A;
+A = 'This is a string.';
+window.alert(A);
+document.write(A);
