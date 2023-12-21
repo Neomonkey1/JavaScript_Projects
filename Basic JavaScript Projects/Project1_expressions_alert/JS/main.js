@@ -12,3 +12,6 @@ var Family = ' The Simpsons', Dad = ' Homer ', Mom = ' Marge ',//assigns the var
 Son = ' Bart ', Daughter = ' Lisa '; 
 document.write(Daughter);//This calls one of the varibles from 'Family'
 document.write(5+5);//This statement (document.write) contains and prints an expression.
+function displayDate(){ // adding a function to display the time when clicked
+    document.getElementById("demo").innerHTML=Date();
+}
