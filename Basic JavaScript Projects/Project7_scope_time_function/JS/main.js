@@ -29,3 +29,13 @@ function get_Day(){//using If statement if it's NOT the weekend it will display 
         document.getElementById('Weekday').innerHTML = 'It\'s a weekday.';
     }
 }
+function Age_Function(){
+    Age = document.getElementById('Age').value;//receive input from html
+    if (Age >= 18){//using If statement if Age is 18 or older Vote will display below
+        Vote = 'You are old enough to vote!';
+    }
+    else{//using Else statement if Age is younger then 18 Vote will display below
+        Vote = 'You are not old enough to vote!';
+    }
+    document.getElementById('How_old_are_you?').innerHTML = Vote;//calls Vote to display on html
+}
