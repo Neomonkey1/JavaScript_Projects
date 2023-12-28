@@ -24,3 +24,27 @@ function myFunction(){//This calls my function to display Erik's Vehicle values.
     'Erik drives a '+ Erik.Vehicle_Color + '-colored '+ Erik.Vehicle_Model +
     ' manufactured in '+ Erik.Vehicle_Year;
 }
+function Person(first, last, age, eye){//Constructor function for Person objects
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+}
+//creating a family Person object
+const iFather = new Person ('Ray', 'Harrison', 42, 'brown');
+const iMother = new Person ('Brandi', 'Harrison', 37, 'Hazel');
+const iSon1 = new Person ('Luke', 'Harrison', 11, 'brown');
+const iSon2 = new Person ('Elijah', 'Harrison', 0, 'Hazel');
+function myFamily(){
+    document.getElementById('New_and_This').innerHTML =
+    'My son '+ iSon1.firstName + ' is ' + iSon1.age + ' years old.'
+}
+function Nested_Function(){//creating Nested_Function which will call a nested function to count
+    document.getElementById('Counting').innerHTML = Count();//Will send Count to html
+    function Count(){//nested function will send Value up to count_Function
+        var Starting_point = 12;
+        function Plus_one(){Starting_point += 1;}//another nested function to added 1 to var
+        Plus_one();
+        return Starting_point;//sends results of function Plus_one up to function count
+    }
+}
