@@ -19,3 +19,13 @@ Add_numbers4();//will NOT display on html
 function Add_numbers4(){//you could use console.log() method to help debug why code for Add numbers4 doesn't work
     console.log(B + 100);
 }
+function get_Date(){
+    if (new Date().getHours() < 21){//using If statement if it's before 9:00pm it will display 'How are you today?' 
+        document.getElementById('Greeting').innerHTML = 'How are you today?';//if after 9:00pm nothing will display        
+    }    
+}
+function get_Day(){//using If statement if it's NOT the weekend it will display 'It's a weekday'
+    if (new Date().getDay() != 0,6){//if it is the weekend nothing will display
+        document.getElementById('Weekday').innerHTML = 'It\'s a weekday.';
+    }
+}
