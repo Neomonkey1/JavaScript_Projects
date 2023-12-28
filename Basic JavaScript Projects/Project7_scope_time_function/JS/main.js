@@ -39,3 +39,17 @@ function Age_Function(){
     }
     document.getElementById('How_old_are_you?').innerHTML = Vote;//calls Vote to display on html
 }
+function Time_function(){
+    var Time = new Date().getHours();//variable is based off what the local time is
+    var Reply;
+    if (Time < 12 == Time > 0){//if statement if Time is before noon (12) And after midnight (0)
+        Reply = 'It is morning time!';//This will display
+    }
+    else if (Time >= 12 == Time < 18){//Else If statement if Time is after noon (12) And before 6:00pm
+        Reply = 'It is afternoon.';//This will display
+    }
+    else {//Else statement all other times
+        Reply = 'It is evening time.';//This will display
+    }
+    document.getElementById('Time_of_day').innerHTML = Reply;
+}
