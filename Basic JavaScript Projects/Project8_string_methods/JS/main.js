@@ -15,3 +15,6 @@ function func_Upper(){//using function to make id text upper case
     let text = document.getElementById('make_Upper').innerHTML;//calls id from html and makes it the text 
     document.getElementById('make_Upper').innerHTML = text.toUpperCase();//converts the text called to upper case
 }
+let text = "Please locate where 'locate' occurs!";
+let index = text.search('locate');//using search() will find first occurs/index of the string.
+document.getElementById('Test1').innerHTML = index;
