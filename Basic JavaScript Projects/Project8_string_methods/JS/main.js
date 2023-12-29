@@ -6,3 +6,8 @@ function full_Sentence(){//using function to Concatenate a string
     var whole_sentence = part_1.concat(part_2, part_3, part_4);
     document.getElementById('Concatenate').innerHTML = whole_sentence;
 }
+function slice_Method(){//using function to slice a part of the string to display
+    var Sentence = 'All work and no play makes Johnny a dull boy.';
+    var Section = Sentence.slice(27, 33);//27 index is J to 33 which is the space after y 
+    document.getElementById('Slice').innerHTML = Section;//This will display 'Johnny'
+}
