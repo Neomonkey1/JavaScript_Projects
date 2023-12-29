@@ -18,3 +18,7 @@ function func_Upper(){//using function to make id text upper case
 let text = "Please locate where 'locate' occurs!";
 let index = text.search('locate');//using search() will find first occurs/index of the string.
 document.getElementById('Test1').innerHTML = index;
+function string_Method(){//using function to make a number return as a string
+    var A = 182;
+    document.getElementById('Numbers_to_string').innerHTML = A.toString();
+}
