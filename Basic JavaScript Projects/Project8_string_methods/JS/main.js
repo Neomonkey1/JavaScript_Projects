@@ -22,3 +22,17 @@ function string_Method(){//using function to make a number return as a string
     var A = 182;
     document.getElementById('Numbers_to_string').innerHTML = A.toString();
 }
+function precision_Method(){//using function toPrecision to round up a number
+    var B = 12938.3012987376112;
+    document.getElementById('Precision').innerHTML = B.toPrecision(10);
+    //toPrecision() the number inside is where it will round up the number to this case 10 digits
+}
+let C = 6.7261;//using function toFixed to round up to the digit I pick (good to use with money)
+document.getElementById('method_ToFixed').innerHTML = C.toFixed(0) +'<br>'+
+C.toFixed(2) +'<br>'+
+C.toFixed(4);
+function func_valueOf(){//using function valueOf to return a number for a number
+    var D = 132;
+    var res = D.valueOf()+"<br>"+(132).valueOf();//different ways to write valueOf
+    document.getElementById('Value').innerHTML = res;
+}
