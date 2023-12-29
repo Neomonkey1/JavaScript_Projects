@@ -11,3 +11,7 @@ function slice_Method(){//using function to slice a part of the string to displa
     var Section = Sentence.slice(27, 33);//27 index is J to 33 which is the space after y 
     document.getElementById('Slice').innerHTML = Section;//This will display 'Johnny'
 }
+function func_Upper(){//using function to make id text upper case
+    let text = document.getElementById('make_Upper').innerHTML;//calls id from html and makes it the text 
+    document.getElementById('make_Upper').innerHTML = text.toUpperCase();//converts the text called to upper case
+}
