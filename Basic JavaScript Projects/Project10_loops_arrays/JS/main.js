@@ -9,3 +9,8 @@ function Call_Loop(){//Made function
     }
     document.getElementById('Loop').innerHTML = Digit;
 }
+function string_Length(){//Made function
+    var str = 'Hello World!'//variable string
+    var B = str.length;//using .length to get length of var str
+    document.getElementById('Length').innerHTML = B;
+}
