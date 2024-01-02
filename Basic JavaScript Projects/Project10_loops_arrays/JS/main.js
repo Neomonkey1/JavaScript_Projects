@@ -70,3 +70,14 @@ function return_Function(){//made function to return a value
     return Math.PI;
 }
 document.getElementById('Return').innerHTML = return_Function();
+let car = {//using let to make car object
+    make: 'Dodge ',
+    model: 'Viper ',
+    year: '2021 ',
+    color: 'red ',
+    description : function(){//using function to return method
+        return 'The car is a ' + this.year + this.color + this.make +
+        this.model;
+    }
+};
+document.getElementById('Car_Object').innerHTML = car.description();
