@@ -81,3 +81,12 @@ let car = {//using let to make car object
     }
 };
 document.getElementById('Car_Object').innerHTML = car.description();
+function func_Break(){//using function to show loop break
+    let text = '';
+    for (let i = 0; i < 10; i++){//using for loop
+        if (i === 3){ break; }//break statement to 'break' out of loop when 
+        //variable equals 3
+        text += 'The number is ' + i + '<br>';
+    }
+    document.getElementById('Break').innerHTML = text;
+}
