@@ -66,3 +66,7 @@ document.write('<br>'+ B);
     document.write('<br>'+ B);
 }
 document.write('<br>'+ B);
+function return_Function(){//made function to return a value
+    return Math.PI;
+}
+document.getElementById('Return').innerHTML = return_Function();
