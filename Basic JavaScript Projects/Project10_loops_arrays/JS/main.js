@@ -14,3 +14,18 @@ function string_Length(){//Made function
     var B = str.length;//using .length to get length of var str
     document.getElementById('Length').innerHTML = B;
 }
+var Instruments = ['Guitar', 'Drums', 'Piano', 'Bass', 'Violin',
+'Trumpet','Flute'];
+var Content = '';
+var Y;
+function for_Loop(){//function for_Loop
+    //start with Y being 0, while Y is less than Instruments
+    //length, increment Y by 1 tell the for loop is done.
+    for (Y = 0; Y < Instruments.length; Y++){
+        //Content will equal the variable Instruments (and display the string)
+        //till Y is greater than Instruments length then it will go to
+        //the next string, with a line break, till there are no more strings which will end the loop.
+        Content += Instruments[Y] + '<br>';
+    }//This will display the strings in HTML
+    document.getElementById('List_of_Instruments').innerHTML = Content;
+}
