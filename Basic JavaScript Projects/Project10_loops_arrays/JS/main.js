@@ -51,3 +51,18 @@ function constant_function(){//made function for constant
     Musical_Instrument.color + ' ' + Musical_Instrument.brand +' '+ Musical_Instrument.type + 
     ' was ' + Musical_Instrument.price;
 }
+var A = 83;//global variable can be accessed from anywhere in the program
+document.write('<br>'+ A);
+{
+    let A = 33;//let have function scope and can only be accessed within function
+    document.write('<br>'+ A);
+}
+document.write('<br>'+ A);
+var B = 55;//global variable can be accessed from anywhere in the program
+document.write('<br>'+ B);
+{
+    var B = 20;//variable within curly brackets using var do not have function
+    //scope and can be accessed from outside of block of code.
+    document.write('<br>'+ B);
+}
+document.write('<br>'+ B);
